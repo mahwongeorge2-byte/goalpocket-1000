@@ -1,15 +1,131 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080808">
   <title>GOALPOCKET 1000</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <h1>GOALPOCKET</h1>
-  <p>Your goals. Your money. Your future.</p>
+  <header class="topbar">
+    <a class="brand" href="#">GOAL<span>POCKET</span></a>
+    <div class="profile">GP</div>
+  </header>
+
+  <main class="dashboard">
+
+    <section class="welcome">
+      <p class="eyebrow">YOUR FINANCIAL SPACE</p>
+      <h1>Welcome back.</h1>
+      <p class="muted">Your goals. Your money. Your future.</p>
+    </section>
+
+    <section class="balance-card">
+      <p class="muted">TOTAL BALANCE</p>
+      <h2 id="totalBalance">$4,850.00</h2>
+      <p class="balance-note">Your financial overview</p>
+    </section>
+
+    <section class="summary-grid">
+      <article class="summary-card">
+        <p class="muted">TOTAL INCOME</p>
+        <h3 class="income" id="totalIncome">+$2,400.00</h3>
+      </article>
+      <article class="summary-card">
+        <p class="muted">TOTAL EXPENSES</p>
+        <h3 class="expense" id="totalExpenses">-$950.00</h3>
+      </article>
+    </section>
+
+    <section class="panel">
+      <div class="section-heading">
+        <h2>Savings goals</h2>
+        <span class="muted">Your progress</span>
+      </div>
+
+      <div class="goal">
+        <div class="goal-heading">
+          <span>College fund</span>
+          <span>$4,000 / $10,000</span>
+        </div>
+        <div class="progress-track">
+          <div class="progress-fill" style="width: 40%"></div>
+        </div>
+        <p class="muted">40% completed</p>
+      </div>
+
+      <div class="goal">
+        <div class="goal-heading">
+          <span>New laptop</span>
+          <span>$600 / $1,200</span>
+        </div>
+        <div class="progress-track">
+          <div class="progress-fill" style="width: 50%"></div>
+        </div>
+        <p class="muted">50% completed</p>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="section-heading">
+        <h2>Recent transactions</h2>
+        <button id="addTransaction">+ Add</button>
+      </div>
+      <div id="transactionList">
+        <div class="transaction">
+          <div>
+            <strong>Project payment</strong>
+            <p class="muted">Income · Today</p>
+          </div>
+          <strong class="income">+$500.00</strong>
+        </div>
+        <div class="transaction">
+          <div>
+            <strong>School supplies</strong>
+            <p class="muted">Education · Yesterday</p>
+          </div>
+          <strong class="expense">-$45.00</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="ai-panel">
+      <p class="eyebrow">GOALPOCKET INTELLIGENCE</p>
+      <h2>Your AI insights</h2>
+      <p id="aiInsight">
+        Your savings goals are progressing. Keep recording your
+        transactions to receive more useful spending insights.
+      </p>
+      <span class="prototype-label">AI PROTOTYPE · SAMPLE INSIGHT</span>
+    </section>
+
+    <section class="panel">
+      <div class="section-heading">
+        <h2>Reports</h2>
+        <span class="muted">Overview</span>
+      </div>
+      <p class="muted">
+        Your income, expenses and savings reports will appear here.
+      </p>
+    </section>
+
+    <p class="disclaimer">
+      GOALPOCKET is an educational prototype. It does not provide
+      personalized financial advice.
+    </p>
+
+  </main>
+
+  <nav class="bottom-nav">
+    <a href="#top" class="active">Home</a>
+    <a href="#transactionList">Transactions</a>
+    <a href="#totalBalance">Goals</a>
+    <a href="#aiInsight">AI</a>
+    <a href="#aiInsight">Reports</a>
+  </nav>
 
   <script src="app.js"></script>
 </body>
