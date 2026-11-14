@@ -1,0 +1,29 @@
+/* GOALPOCKET 1000 — Design foundation */
+
+:root {
+  --background: #080808;
+  --surface: #151515;
+  --gold: #d4af37;
+  --white: #ffffff;
+  --muted: #999999;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--white);
+  font-family: Arial, sans-serif;
+}
+
+button {
+  background: var(--gold);
+  color: #080808;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
